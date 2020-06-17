@@ -21,17 +21,17 @@ public class SortedCars {
         Car car3 = new Car("ghi", 3000);
 
         Set<Car> cars = new TreeSet<>();
-        cars.add(car1);
         cars.add(car2);
+        cars.add(car1);
         cars.add(car3);
-        // System.out.println(cars);
+        System.out.println(cars);
 
         List<Car> carList = new ArrayList<>();
-        carList.add(car3);
         carList.add(car2);
         carList.add(car1);
-        System.out.println(carList);
+        carList.add(car3);
         Collections.sort(carList);
+        System.out.println(carList);
 
 
 
