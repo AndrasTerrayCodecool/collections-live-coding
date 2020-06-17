@@ -11,6 +11,10 @@ public class Car {
         this.price = price;
     }
 
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
