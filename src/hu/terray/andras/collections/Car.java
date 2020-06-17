@@ -2,7 +2,7 @@ package hu.terray.andras.collections;
 
 import java.util.Objects;
 
-public class Car {
+public class Car implements Comparable<Car> {
     private String licensePlate;
     private int price;
 
@@ -34,5 +34,15 @@ public class Car {
     @Override
     public int hashCode() {
         return Objects.hash(licensePlate);
+    }
+
+
+    public int getPrice() {
+        return price;
+    }
+
+    @Override
+    public int compareTo(Car car) {
+        return price - car.getPrice();
     }
 }
