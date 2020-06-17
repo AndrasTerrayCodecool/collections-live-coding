@@ -15,8 +15,7 @@ public class Main {
         cars.add(car1);
         cars.add(car2);
         cars.add(car3);
-        System.out.println(cars);
         Collections.shuffle(cars);
-        System.out.println(cars);
+
     }
 }
